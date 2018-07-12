@@ -3,11 +3,16 @@ import React from 'react'
 import Kennel from "./Kennel"
 import Locations from './LocationList'
 import EmployeeList from './EmployeeList'
+import { BrowserRouter as Router } from "react-router-dom"
+import registerServiceWorker from "./registerServiceWorker"
+import KennelCompany from "./KennelCompany"
+import "./index.css"
 
 ReactDOM.render( 
-    <div>
-      <EmployeeList />
-        < Kennel / >
-        < Locations / > 
-    </div> ,
+    <Router>
+      <KennelCompany />
+    </Router> ,
     document.querySelector("#root"));
+
+    registerServiceWorker()
+    
