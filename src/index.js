@@ -1,18 +1,7 @@
-import ReactDOM from "react-dom"
-import React from 'react'
-import Kennel from "./Kennel"
-import Locations from './LocationList'
-import EmployeeList from './EmployeeList'
-import { BrowserRouter as Router } from "react-router-dom"
-import registerServiceWorker from "./registerServiceWorker"
-import KennelCompany from "./KennelCompany"
-import "./index.css"
+import ReactDOM from "react-dom" //This pulls in REACT from the node module. This writes to the DOM.
+import React from 'react' //Imported from the Node Module
+import Kennel from "./Kennel" //This imports the Kennel.js module
 
-ReactDOM.render( 
-    <Router>
-      <KennelCompany />
-    </Router> ,
-    document.querySelector("#root"));
 
-    registerServiceWorker()
-    
+//This is activating the ID for the div on the index file.
+ReactDOM.render(<Kennel />, document.querySelector("#root"));
