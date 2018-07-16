@@ -1,14 +1,9 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import { BrowserRouter as Router } from "react-router-dom"
-import registerServiceWorker from "./registerServiceWorker"
-import "./index.css"
+import ReactDOM from 'react-dom';
+import React from 'react';
+import Kennel from "./Kennel";
 
 
-ReactDOM.render((
-    <Router>
-        <KennelCompany />
-    </Router>
-), document.querySelector("#root"))
 
-registerServiceWorker()
+
+
+ReactDOM.render(<Kennel />, document.querySelector("#root"));
