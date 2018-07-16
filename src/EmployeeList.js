@@ -1,16 +1,25 @@
 import React, { Component } from 'react'
 
 
-export default class EmployeeList  extends Component {
+export default class EmployeeList extends Component {
+    state = {
+        employees: [
+            { id: 1, name: "Jessica Younker" },
+            { id: 2, name: "Jordan Nelson" },
+            { id: 3, name: "Zoe LeBlanc" },
+            { id: 4, name: "Blaise Roberts" }
+        ]
+    }
+
     render() {
         return (
-            <article>
-                <h1>List Of Employees</h1>
-                <section>Jessica Younker</section>
-                <section>Jordan Nelson</section>
-                <section>Zoe LeBlanc</section>
-                <section>Blaise Roberts</section>
-            </article>
-        );
+            <React.Fragment>
+                <ul>
+                {
+                    this.state.employees.map(employee =>  <li>{employee.name}</li> )
+                }
+                </ul>
+            </React.Fragment>
+        )
     }
-}
+    }

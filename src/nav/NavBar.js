@@ -10,7 +10,6 @@ export default class NavBar extends Component {
                 <Link to="/">Locations</Link>
                 <Link to="/animals">Animals</Link>
                 <Link to="/employees">Employees</Link>
-    
             </nav>
         )
     }
